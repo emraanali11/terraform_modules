@@ -8,7 +8,6 @@ provider "aws" {
 }
 
 resource "aws_instance" "instances" {
-  name = "var.name"
   count                  = length(var.max_server_count)
   ami                    = "var.ami_id"
   instance_type          = "var.instance_type"

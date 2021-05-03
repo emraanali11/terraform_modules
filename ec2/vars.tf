@@ -36,7 +36,3 @@ variable "vpc_security_group_ids" {
 variable "subnet" {
   default = "subnet-0976cf6c"
 }
-
-variable "name" { 
-  default = "test"
-}
