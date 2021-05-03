@@ -9,7 +9,7 @@ provider "aws" {
 
 resource "aws_instance" "instances" {
   name = "var.name"
-  count                  = "var.max_server_count"
+  count                  = length(var.max_server_count)
   ami                    = "var.ami_id"
   instance_type          = "var.instance_type"
   vpc_security_group_ids = ["var.vpc_security_group_ids"]
