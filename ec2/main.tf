@@ -3,10 +3,6 @@ terraform {
   required_version = ">= 0.12.17"
 }
 
-provider "aws" {
-  region = "var.region"
-}
-
 resource "aws_instance" "instances" {
   count                  = length(var.max_server_count)
   ami                    = "var.ami_id"
