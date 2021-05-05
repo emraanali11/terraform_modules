@@ -22,6 +22,7 @@ variable "instance_type" {
 variable "max_server_count" {
   description = " Max instance count you wish to create"
   default     = "1"
+  type = "string"
 }
 
 variable "ami_id" { 
